@@ -1,4 +1,4 @@
-package 출력;
+package 출력과연산자;
 
 import java.util.Scanner;
 
