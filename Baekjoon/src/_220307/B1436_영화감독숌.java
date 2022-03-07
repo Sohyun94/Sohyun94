@@ -14,9 +14,9 @@ public class B1436_영화감독숌 {
 		// 아직 횟수 N만큼 진행 안 했을 때
 		while (cnt < N) {
 			fin++; // 숫자 증가
-			sssix = Integer.toString(fin); // 문자열에 종말의 숫자(ㅋㅋ) 넣기
+			sssix = Integer.toString(fin); // 종말의 숫자(ㅋㅋ) 문자열로 변환해 넣기
 			//해당 안 될 때까지 반복
-			if (sssix.indexOf("666") != -1)
+			if (sssix.indexOf("666") != -1) //666이 있는 문자 위치 찾기
 				cnt++;
 
 		}//while문
