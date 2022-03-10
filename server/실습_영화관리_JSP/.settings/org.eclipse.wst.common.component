@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="실습_영화관리_JSP">
-        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="실습_영화관리_JSP"/>
-        <property name="java-output-path" value="/실습_영화관리_JSP/build/classes"/>
-    </wb-module>
-</project-modules>

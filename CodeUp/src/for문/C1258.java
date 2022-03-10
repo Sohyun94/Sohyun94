@@ -13,11 +13,13 @@ public class C1258 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		String num = bf.readLine();
 		int nnum = Integer.parseInt(num);
+		
 		int sum = 0;
 		for (int i = 2; i <= nnum; i += 2) {
 			sum += i;
-			bw.write(sum);
 		}
+		String ssum = sum + "";
+		bw.write(ssum);
 		bw.flush();
 	}
 
