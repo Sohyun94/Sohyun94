@@ -2,7 +2,7 @@ package for문;
 
 import java.util.Scanner;
 
-public class C1285 {
+public class C1285_fail {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class C1285 {
 				continue;
 //			}
 		}
-		System.out.println((cal2[cal.length/2]));
+		System.out.println((cal2[cal.length / 2]));
 	}
 
 }

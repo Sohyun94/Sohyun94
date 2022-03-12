@@ -2,7 +2,7 @@ package for문;
 
 import java.util.Scanner;
 
-public class C1675 {
+public class C1294 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -11,19 +11,16 @@ public class C1675 {
 		for (int i = 0; i < code.length; i++) {
 			if (code[i] == ' ')
 				continue;
-			else if (code[i] == 'a')
-				code[i] = 'x';
-			else if (code[i] == 'b')
-				code[i] = 'y';
-			else if (code[i] == 'c')
-				code[i] = 'z';
+			else if (code[i] == 'x')
+				code[i] = 'a';
+			else if (code[i] == 'y')
+				code[i] = 'b';
+			else if (code[i] == 'z')
+				code[i] = 'c';
 			else
-				code[i] -= 3;
+				code[i] += 3;
 		}
-		for (int i = 0; i < code.length; i++) {
-			System.out.print(code[i]);
-		}
-
+		System.out.println(code);
 	}
 
 }
