@@ -24,19 +24,19 @@ public class C1371 {
 			}
 			System.out.println();
 		}
-		for (int i = n; i <= 2 * n; i++) {
+		for (int i = n + 1; i <= 2 * n; i++) {
 			for (int j = 0; j < n; j++) {
-				if (i - j == n) {
+				if (i - j == n + 1) {
 					System.out.print("*");
 				} else {
 					System.out.print(" ");
 				}
 			}
-			for (int j = n; j <= 2 * n; j++) {
-				if (i + j == 3 * n) {
-					System.out.print("*");
-				} else {
+			for (int j = n; j < 2 * n; j++) {
+				if (i + j != 3 * n) {
 					System.out.print(" ");
+				} else {
+					System.out.print("*");
 				}
 			}
 			System.out.println();
