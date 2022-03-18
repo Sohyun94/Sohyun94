@@ -16,7 +16,7 @@ public class C1408 {
 		}
 		System.out.println();
 		for(int i = 0 ; i < pw.length(); i++) {
-			System.out.print((char) (pwA[i] * 7 % 80 + 40));
+			System.out.print((char) ((pwA[i] * 7) % 80 + 40));
 		}
 
 	}
