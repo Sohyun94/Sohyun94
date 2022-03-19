@@ -25,7 +25,14 @@ public class C1368 {
 		else if (d.equals("L")) {
 			for (int i = 0; i < h; i++) {
 				for (int j = 0; j < 2 * k; j++) {
+					if (j < i)
+						System.out.print(" ");
+					else if (j < k + i)
+						System.out.print("*");
+					else
+						System.out.print("");
 				}
+				System.out.println();
 			}
 		}
 	}
