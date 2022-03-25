@@ -2,25 +2,22 @@ package twoDimenArr;
 
 import java.util.Scanner;
 
-public class C1477 {
+public class C1472 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		int m = sc.nextInt();
-		int num = 1;
+		int n = sc.nextInt(); // 열 수
+		int m = sc.nextInt(); // 행 수
 		int arr[][] = new int[n][m];
-		for (int k = 0; k <= n + m - 2; k++) {
-			for (int i = 0; i < n; i++) {
-				for (int j = 0; j < m; j++) {
-					if (i + j == k) {
-						arr[i][j] = num++;
-						break;
-					}
-
+		int cnt = 1;
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < m; j++) {
+				if (i % 2 == 0) {
+					arr[n - 1 - i][m - 1 - j] = cnt++;
+				} else if (i % 2 != 0) {
+					arr[n - 1 - i][j] = cnt++;
 				}
 			}
-
 		} // 입력
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < m; j++) {
@@ -30,4 +27,5 @@ public class C1477 {
 		}
 
 	}
+
 }
