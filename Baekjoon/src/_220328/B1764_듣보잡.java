@@ -14,8 +14,8 @@ public class B1764_듣보잡 {
 		int nsee = sc.nextInt(); // 보도 못한 사람
 		int nhearsee = 0; // 듣보잡 수
 
-		HashSet<String> nh = new HashSet<>();
-		ArrayList<String> nhs = new ArrayList<>();
+		HashSet<String> nh = new HashSet<>(); //듣도 못한 사람
+		ArrayList<String> nhs = new ArrayList<>(); //듣도 보도 못한 사람
 
 		for (int i = 0; i < nhear; i++) {
 			nh.add(sc.next()); // 듣도 못한 사람들 명단 넣기
