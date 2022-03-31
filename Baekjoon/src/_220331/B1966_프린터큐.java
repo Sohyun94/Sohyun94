@@ -30,9 +30,9 @@ public class B1966_프린터큐 {
 						break; // 동작 종료
 					}
 				} // 확인 for문
-				if (check == true) {
-					idx++; // check가 true면 idx에 1 더해 주기 (인쇄 중이니까)
-					if (first[0] == pos) // 그러다가 내가 궁금한 문서 차례 되면 멈추기
+				if (check == true) { //가장 중요도가 높으면
+					idx++; // idx에 1 더해 주기 (인쇄 중이니까)
+					if (first[0] == pos) // 그러다가 내가 궁금한 문서 위치가 되면 멈추기
 						break;
 				} else {
 					printer.add(first); // 아니면 프린터에 다시 넣기
