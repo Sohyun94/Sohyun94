@@ -8,7 +8,7 @@ import java.util.Scanner;
 //이걸 기억해서 이동 가능한 장소를 전부 체크하면 되겠다
 
 public class S1953_탈주범검거 {
-	// N: 지도 세로 크기, M: 지도 가로 크기, R: 맨홀 세로 위치, C: 맨홀 가로 위치
+	// mapN: 지도 세로 크기, mapM: 지도 가로 크기, holeR: 맨홀 세로 위치, holeC: 맨홀 가로 위치
 	// time: 탈주 후 경과 시간, place: 탈주범이 있을 수 있는 위치 수
 	// map: 지하 터널 지도 2차원 배열
 	static int mapN, mapM, holeR, holeC, time, place, map[][];
