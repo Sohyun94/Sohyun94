@@ -2,7 +2,7 @@ package june20th;
 
 import java.util.Scanner;
 
-public class B1316_그룹단어체커 {
+public class B1316_그룹단어체커2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
