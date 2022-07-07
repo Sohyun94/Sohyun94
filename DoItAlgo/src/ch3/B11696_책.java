@@ -18,10 +18,9 @@ public class B11696_책 {
 			arrSum[1] = arr[1];
 			arrSum[i] += arrSum[i - 1] + arr[i];
 		}
-		
+
 		// 구간 합 공식 (구간: i ~ j)
 		// S[j] - S[i-1];
-		
 
 		for (int tc = 0; tc < M; tc++) {
 			int a = sc.nextInt();
