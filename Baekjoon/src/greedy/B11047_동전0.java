@@ -1,6 +1,7 @@
+package greedy;
 import java.util.Scanner;
 
-public class B11047_동전0_다른풀이 {
+public class B11047_동전0 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -12,10 +13,12 @@ public class B11047_동전0_다른풀이 {
 			coin[i] = sc.nextInt();
 		}
 		for (int i = N - 1; i >= 0; i--) {
-			// 나눈 몫을 더해 주고, K는 나눈 나머지 값으로 갱신
-			if (coin[i] <= K) {
-				ans += (K / coin[i]);
-				K = K % coin[i];
+			if (coin[i] > K)
+				continue;
+			else if (coin[i] <= K) {
+				K = K - coin[i];
+				ans++;
+				i = i + 1;
 			}
 		}
 		System.out.println(ans);

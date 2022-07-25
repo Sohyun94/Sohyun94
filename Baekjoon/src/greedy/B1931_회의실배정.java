@@ -1,4 +1,4 @@
-package july25th;
+package greedy;
 import java.util.Scanner;
 
 public class B1931_회의실배정 {
