@@ -2,7 +2,7 @@ package greedy;
 
 import java.util.Scanner;
 
-public class B13305_주요소 {
+public class B13305_주유소2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -16,21 +16,13 @@ public class B13305_주요소 {
 			city[i] = sc.nextInt();
 		}
 
-		int cost = city[0] * road[0];
+		long cost = city[0] * road[0];
 		if (N >= 3) {
 			for (int i = 1; i <= N - 2; i++) {
-				if (i == N - 2) {
-					if (city[N - 3] > city[N - 2]) {
-						cost += city[N - 2] * road[i];
-					} else {
-						cost += city[N - 3] * road[i];
-					}
+				if (city[i - 1] < city[i]) {
+					cost += city[i - 1] * road[i];
 				} else {
-					if (city[i] > city[i + 1]) {
-						cost += city[i + 1] * road[i];
-					} else {
-						cost += city[i] * road[i];
-					}
+					cost += city[i] * road[i];
 				}
 			}
 		}
