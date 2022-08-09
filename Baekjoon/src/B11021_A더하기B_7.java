@@ -7,7 +7,7 @@ public class B11021_A더하기B_7 {
 		int T = sc.nextInt();
 		for(int tc = 0 ; tc < T; tc++) {
 			int result = sc.nextInt() + sc.nextInt();
-			System.out.println("Case " + (tc+1) + ": " + result);
+			System.out.println("Case #" + (tc+1) + ": " + result);
 		}
 
 	}
