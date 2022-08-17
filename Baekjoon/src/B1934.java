@@ -6,29 +6,28 @@ public class B1934 {
 		Scanner sc = new Scanner(System.in);
 		int A = sc.nextInt();
 		int B = sc.nextInt();
-		int min = 0;
-		int max = 0;
-		int Aa = 0;
-		int Bb = 0;
+		int max = 1;
+		int Aa = 1;
+		int Bb = 1;
 		if(A > B) {
-			for(int i = 0; i <= B; i++) {
+			for(int i = 1; i <= B; i++) {
 				if(B % i == 0 && A % i== 0) {
-					min = i;
+					max = i;
 					Aa = A / i;
 					Bb = B / i;
 				}
 			}
 		} else {
-			for(int i = 0; i <= A; i++) {
+			for(int i = 1; i <= A; i++) {
 				if(B % i == 0 && A % i== 0) {
-					min = i;
+					max = i;
 					Aa = A / i;
 					Bb = B / i;
 				}
 			}
 		}
-		System.out.println(min);
-		System.out.println(min * Aa * Bb);
+		System.out.println(max);
+		System.out.println(max * Aa * Bb);
 	}
 
 }
