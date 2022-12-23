@@ -8,6 +8,7 @@ public class Baekjoon10872 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
 		int ans = factorial(n);
+		System.out.println(ans);
 
 	}
 
